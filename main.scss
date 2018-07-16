@@ -1,0 +1,15 @@
+#pokemon{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .pokeballs{
+        border: 2px solid black;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        
+
+    }
+}
+
