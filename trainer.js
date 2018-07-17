@@ -1,8 +1,8 @@
 class Trainer{
-    constructor(pokemonObj){
+    constructor(){
 //     //container object to store pokemon objects
-//     this.pokemonObj = {}
-    
+        this.pokemonObj = []
+    }
 
 //     //ALL method to return an array of pokemon - no params-
 //     all pokemon(){
@@ -18,7 +18,7 @@ class Trainer{
 
 
 //     //ADD method to add pokemon object to - 1 param 'pokeObj'
-    add (pokemonObj)
-
+    add (pokemonThing){
+        this.pokemonObj.push(pokemonThing)
     }
 }

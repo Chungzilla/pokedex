@@ -1,2 +1,2 @@
-
+let kanye = new Trainer()
 
