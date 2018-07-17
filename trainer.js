@@ -9,16 +9,15 @@ class Trainer{
 //         console.log(this.trainer.pokemonObj)
 //     }
 
-
-
-
 //     //GET method to return 1 pokeObj - 1 param "name" -
-//     get 
-
-
+    get (pokedex){
+        this.pokemonObj.find((element) => {
+            return element.name == name
+        }
+    )}
 
 //     //ADD method to add pokemon object to - 1 param 'pokeObj'
-    add (pokemonThing){
-        this.pokemonObj.push(pokemonThing)
+    add (pokeBall){
+        this.pokemonObj.push(pokeBall)
     }
 }
