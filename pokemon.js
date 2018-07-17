@@ -4,7 +4,7 @@ class Pokemon{
         this.hp = hp;
         this.defense = defense;
         this.attack = attack;
-        this.abilities = []
+        this.abilities = [];
     }
 }
 
