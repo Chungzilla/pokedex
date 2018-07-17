@@ -1,3 +1,9 @@
+// Pokemon URLs:
+// Bulbasaur = https://pokeapi.co/api/v2/pokemon/1
+// Squirtle: 'https://pokeapi.co/api/v2/pokemon/7
+// Meowth: https://pokeapi.co/api/v2/pokemon/52
+
+
 class Pokemon{
     constructor(name, hp, defense, attack, abilities){
         this.name = name;
@@ -7,7 +13,7 @@ class Pokemon{
         this.abilities = abilities;
     }
 }
-
+//    
 axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
     // console.log(response.data);
     let pokedata = response.data
