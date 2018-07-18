@@ -33,6 +33,16 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
     console.log(bulbasaur)
 
     kanye.add(bulbasaur)
+
+    //Event listener to display pokemon on click
+
+    let pokeball1 = document.getElementById('bulb-button')
+
+    pokeball1.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        alert('Yeaaa THIS WORKS!')
+    });
     
 });
 
@@ -57,6 +67,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/7').then((response) => {
     console.log(squirtle)
 
     kanye.add(squirtle)
+
     
 });
 
