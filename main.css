@@ -5,7 +5,18 @@
   #pokemon .pokeballs .unstyled-button {
     background: none;
     border: 0px;
-    animation: shakenfinite; }
+    animation-name: shake;
+    animation-duration: infinite; }
+
+.hidden {
+  visibility: hidden; }
+
+#pokedata .poke-img {
+  height: 200px;
+  width: auto; }
+
+div {
+  border: 1px solid black; }
 
 @keyframes shake {
   from,
