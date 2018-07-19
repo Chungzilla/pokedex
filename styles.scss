@@ -1,4 +1,4 @@
-
+@import 'fonts';
 
 
 body{
@@ -6,7 +6,13 @@ body{
     background: url('pokye.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
+
+    #container{
   
+    h1{
+        font-family: 'PocketMonk';
+      
+    }
   
   #pokemon{
       display:flex;
@@ -39,6 +45,7 @@ body{
 
     #meowth-ball{
         animation-delay: 3s;
+
         }
         
           
@@ -68,6 +75,7 @@ body{
   
 }
 
+}
 
 
   @keyframes shake {
