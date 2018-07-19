@@ -17,7 +17,7 @@ let wrapper= document.createElement('div')
 wrapper.classList.add('wrapper')
 
 
-wrapper.append(displayName, displayHP, displayAtt, displayDef, displayPic, displayAbilities);
+wrapper.append(displayPic, displayName, displayHP, displayAtt, displayDef, displayAbilities);
 
 pokeDataContainer.append(wrapper);
 
