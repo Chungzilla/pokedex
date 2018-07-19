@@ -5,12 +5,22 @@ body {
   body #pokemon {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
-    body #pokemon .pokeballs .unstyled-button {
+    justify-content: space-around;
+    animation: fly in; }
+    body #pokemon .unstyled-button {
       background: none;
-      border-radius: 50%;
-      animation-name: shake;
-      animation-duration: infinite; }
+      border-radius: 50%; }
+    body #pokemon .unstyled-button:hover {
+      animation: shake 2s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      -webkit-animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden; }
+    body #pokemon #bulbasaur-ball {
+      animation-delay: 1s; }
+    body #pokemon #squirtle-ball {
+      animation-delay: 2s; }
+    body #pokemon #meowth-ball {
+      animation-delay: 3s; }
   body #pokedata {
     display: flex;
     flex-direction: column;
@@ -22,5 +32,24 @@ body {
       body #pokedata #wrapper .poke-img {
         height: 200px;
         width: auto; }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
 
 /*# sourceMappingURL=styles.css.map */
