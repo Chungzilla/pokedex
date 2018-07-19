@@ -64,6 +64,8 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
     pokeBall1.addEventListener('click', ()=> {
         setup(0);
 
+        
+
         // let bulbImg = document.createElement('img');
         // bulbImg.classList.add('poke-img')
         // bulbImg.src="bulbasaur.png";

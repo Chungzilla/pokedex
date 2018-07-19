@@ -2,6 +2,7 @@
 body{
   background: url('pokye.png') no-repeat center center fixed;
   background-size: cover;
+  color: white;
 
 
 #pokemon{
@@ -29,14 +30,20 @@ body{
   visibility: hidden;
 }
 
-#pokedata{
 
 
-  .poke-img{
-    height: 200px;
-    width: auto;
+  #pokedata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .poke-img{
+      height: 200px;
+      width: auto;
+    }
+
   }
-}
+
 
 div {
   border: 1px solid black;
