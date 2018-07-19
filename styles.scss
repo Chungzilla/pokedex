@@ -1,3 +1,6 @@
+@import 'bootstrap';
+
+
 body{
     
     background: url('pokye.png') no-repeat center center fixed;
@@ -14,6 +17,7 @@ body{
       .unstyled-button{
         background:none;
         border-radius:50%;
+    
       }
 
         .unstyled-button:hover{
@@ -24,7 +28,7 @@ body{
         }
     
   
-    #bulbasaur-ball{
+        #bulbasaur-ball{
        animation-delay: 1s;
 
     }
