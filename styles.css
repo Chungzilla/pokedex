@@ -1,0 +1,26 @@
+body {
+  background: url("pokye.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white; }
+  body #pokemon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    body #pokemon .pokeballs .unstyled-button {
+      background: none;
+      border-radius: 50%;
+      animation-name: shake;
+      animation-duration: infinite; }
+  body #pokedata {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body #pokedata #wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body #pokedata #wrapper .poke-img {
+        height: 200px;
+        width: auto; }
+
+/*# sourceMappingURL=styles.css.map */

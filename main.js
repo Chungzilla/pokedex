@@ -15,7 +15,7 @@ displayPic.classList.add('poke-img')
 let displayAbilities = document.getElementById('show-abilities');
 
 let wrapper= document.createElement('div')
-wrapper.classList.add('wrapper')
+wrapper.id = 'wrapper'
 
 
 wrapper.append(displayPic, displayName, displayHP, displayAtt, displayDef, displayAbilities);
