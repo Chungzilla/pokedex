@@ -4,7 +4,7 @@
 body {
   background: url("pokye.png") no-repeat center center fixed;
   color: white;
-  background-color: #031430; }
+  background-color: #17253d; }
   body #container #title {
     font-family: 'PocketMonk'; }
   body #container #pokemon {
@@ -26,20 +26,26 @@ body {
       animation-delay: 2s; }
     body #container #pokemon #meowth-ball {
       animation-delay: 3s; }
-  body #container #pokedata {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    body #container #pokedata #poke-info {
-      position: relative;
-      top: 50px; }
-      body #container #pokedata #poke-info #wrapper {
+      body #container #pokemon #meowth-ball .modal-body {
         display: flex;
         flex-direction: column;
         align-items: center; }
-        body #container #pokedata #poke-info #wrapper .poke-img {
+  body #pokedata {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body #pokedata #poke-info {
+      position: relative;
+      top: 50px; }
+      body #pokedata #poke-info #wrapper {
+        background-color: #17253d;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body #pokedata #poke-info #wrapper .poke-img {
           height: 200px;
           width: auto; }
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0); }

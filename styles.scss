@@ -1,4 +1,5 @@
 @import 'fonts';
+@import 'colors';
 
 
 body{
@@ -6,7 +7,7 @@ body{
     background: url('pokye.png') no-repeat center center fixed;
     // background-size: cover;
     color: white;
-    background-color: #031430;
+    background-color: $blue;
 
     #container{
   
@@ -42,20 +43,25 @@ body{
 
     #squirtle-ball{
         animation-delay: 2s;
-        }
+    }
 
     #meowth-ball{
         animation-delay: 3s;
 
+        .modal-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            }
+            
         }
+
+     }
         
           
-          // button:focus {
-          //     outline:0;
-          // }
     }
-
-  
   
     #pokedata{
       display: flex;
@@ -67,9 +73,10 @@ body{
           top: 50px;
 
             #wrapper{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                background-color: $blue;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                     .poke-img{
                         height: 200px;
@@ -121,4 +128,3 @@ body{
         }
     }
 
-}

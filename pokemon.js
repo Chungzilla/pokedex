@@ -26,12 +26,14 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
     let defense = pokedata.stats[3].base_stat;
     let attack = pokedata.stats[4].base_stat;
     let pokeAbility = [];
+        // console.log(pokeAbility);
 
      //add abilities to string
      pokedata.abilities.forEach(element =>
         pokeAbility.push(element.ability.name)
     ) // console.log(pokeAbility) 
 
+    
     let bulbasaur = new Pokemon(name, hp, defense, attack, pic, pokeAbility)
     console.log(bulbasaur);
 
@@ -117,7 +119,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/52').then((response) => {
     let pokedata = response.data
     // console.log(pokedata);
     
-    let name = pokedata.name
+    let name = pokedata.name;
     let hp = pokedata.stats[5].base_stat
     let defense = pokedata.stats[3].base_stat
     let attack = pokedata.stats[4].base_stat
@@ -140,7 +142,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/52').then((response) => {
        
         $( document ).ready(function() {
             $('#important-msg').modal('show');
-
+             
             $("#close").click( function() {  
     
                     setup(2);
