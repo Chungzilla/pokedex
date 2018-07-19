@@ -1,3 +1,9 @@
+
+body{
+  background: url('pokye.png') no-repeat center center fixed;
+  background-size: cover;
+
+
 #pokemon{
     display:flex;
     flex-direction: row;
@@ -8,7 +14,7 @@
         
         .unstyled-button{
             background:none;
-            border:0px;
+            border-radius:50%;
             animation-name: shake;
             animation-duration: infinite;
           }
@@ -34,6 +40,8 @@
 
 div {
   border: 1px solid black;
+}
+
 }
 
 @keyframes shake {

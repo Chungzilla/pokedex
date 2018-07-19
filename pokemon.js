@@ -6,11 +6,12 @@
 
 
 class Pokemon{
-    constructor(name, hp, defense, attack, abilities){
+    constructor(name, hp, defense, attack, pic, abilities){
         this.name = name;
         this.hp = hp;
         this.defense = defense;
         this.attack = attack;
+        this.pic = pic;
         this.abilities = abilities;
     }
 }
@@ -23,6 +24,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
     let hp = pokedata.stats[5].base_stat;
     let defense = pokedata.stats[3].base_stat;
     let attack = pokedata.stats[4].base_stat;
+    let pic = pokedata.sprites.front_default;
     let pokeAbility = [];
 
      //add abilities to string
@@ -30,7 +32,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
         pokeAbility.push(element.ability.name)
     ) // console.log(pokeAbility) 
 
-    let bulbasaur = new Pokemon(name, hp, defense, attack, pokeAbility)
+    let bulbasaur = new Pokemon(name, hp, defense, attack, pic, pokeAbility)
     console.log(bulbasaur);
 
     kanye.add(bulbasaur);
@@ -45,9 +47,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
 // //Creates new div container to display pokemon images
 //         let pokeWindow = document.createElement('div');
 //         pokeWindow.id = 'window';
-//         let imgtag = document.createElement('img');
-//         imgtag.classList.add('poke-img')
-//         imgtag.src="bulbasaur.png";
+//         
 
 //         // //Creaate div to contain pokemon info
 //         // let title = document.createElement('h3')
@@ -58,9 +58,18 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
 
 //Calls setup function and passes variable corresponding to index in pokemonObj from trainer class
 
+
+
     let pokeBall1 = document.getElementById('bulb-button');
     pokeBall1.addEventListener('click', ()=> {
         setup(0);
+
+        // let bulbImg = document.createElement('img');
+        // bulbImg.classList.add('poke-img')
+        // bulbImg.src="bulbasaur.png";
+
+        // pokeDataContainer.append(bulbImg)
+
     })
 
 
@@ -81,6 +90,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/7').then((response) => {
     let hp = pokedata.stats[5].base_stat
     let defense = pokedata.stats[3].base_stat
     let attack = pokedata.stats[4].base_stat
+    let pic = pokedata.sprites.front_default;
     let pokeAbility = []
 
      //add abilities to string
@@ -115,6 +125,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon/52').then((response) => {
     let hp = pokedata.stats[5].base_stat
     let defense = pokedata.stats[3].base_stat
     let attack = pokedata.stats[4].base_stat
+    let pic = pokedata.sprites.front_default;
     let pokeAbility = []
 
      //add abilities to string
