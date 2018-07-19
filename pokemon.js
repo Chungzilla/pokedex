@@ -62,11 +62,8 @@ axios.get('https://pokeapi.co/api/v2/pokemon/1').then((response) => {
 
     let pokeBall1 = document.getElementById('bulb-button');
     pokeBall1.addEventListener('click', ()=> {
-        setup(0);
-
     
-
-        // pokeDataContainer.append(bulbImg)
+                setup(0);
 
     })
 
@@ -106,7 +103,8 @@ axios.get('https://pokeapi.co/api/v2/pokemon/7').then((response) => {
     let pokeBall2 = document.getElementById('squirtle-button');
 
     pokeBall2.addEventListener('click', () => {
-        setup(1);
+
+                    setup(1);  
     });
 
 
@@ -139,7 +137,18 @@ axios.get('https://pokeapi.co/api/v2/pokemon/52').then((response) => {
     let pokeBall3 = document.getElementById('meowth-button');
 
     pokeBall3.addEventListener('click', () => {
-        setup(2);
+       
+        $( document ).ready(function() {
+            $('#important-msg').modal('show');
+
+            $("#close").click( function() {  
+    
+                    setup(2);
+
+            });
+
+        });
+
 
     });
     

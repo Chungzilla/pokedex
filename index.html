@@ -9,7 +9,7 @@
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-
+<link rel="stylesheet" href="bootstrap.min.css">
    
 </head>
 <body>
@@ -33,6 +33,24 @@
                     <button id="meowth-button" class="unstyled-button">
                         <img src="pokeballMED.png">
                     </button>
+
+                    <!--    MODAL -->
+                    <div class="modal fade " id="important-msg" tabindex="-1" role="dialog" aria-labelledby="important-msg-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <h1 class="modal-title" id="important-msg-label">Kanye says...</h1>
+                            </div>
+                            <div class="modal-body">
+                              <h2>I'm gonna let you finish..... but Beyonce is the BEST POKEMON OF ALL TIME!!!!</h2>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-dismiss="modal" id="close">I love Kanye!</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
             </div>
 
         </div>
@@ -60,13 +78,20 @@
             </div>
 
         </div>
-
+            
             
     </div>
-  
+
+    
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="bootstrap.min.js"></script>  
 <script src="trainer.js"></script>
 <script src="main.js"></script>
 <script src="pokemon.js"></script>
+
 </body>
 </html>
